@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Camera Preview -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/cameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <!-- Overlay for background color change -->
+    <View
+        android:id="@+id/overlayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"/>
+
+    <com.example.interim.FaceRecognitionOverlayView
+        android:id="@+id/faceOverlayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+    <!-- Horizontal ScrollView for Skin Tone Selection -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingVertical="20dp"
+        android:fillViewport="true">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:textColor="@color/black"
+                android:id="@+id/btn_spr_f"
+                android:text="Spring Fair"
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/f_spr"/>
+
+            <Button
+                android:textColor="@color/black"
+                android:id="@+id/btn_spr_t"
+                android:text="Spring True"
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/t_spr"/>
+
+            <Button
+                android:textColor="@color/black"
+                android:id="@+id/btn_spr_d"
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/d_spr"
+                android:text="Spring Deep" />
+
+            <Button
+                android:textColor="@color/black"
+                android:id="@+id/btn_aut_f"
+                android:text="Autumn Fair"
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/f_aut"/>
+
+            <Button
+                android:textColor="@color/white"
+                android:id="@+id/btn_aut_t"
+                android:text="Autumn True"
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/t_aut"/>
+
+            <Button
+                android:textColor="@color/white"
+                android:id="@+id/btn_aut_d"
+                android:text="Autumn Deep"
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/d_aut"/>
+
+            <Button
+                android:textColor="@color/black"
+                android:id="@+id/btn_summ_f"
+                android:text="Summer Fair"
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/f_summ"/>
+
+            <Button
+                android:textColor="@color/black"
+                android:id="@+id/btn_summ_t"
+                android:text="Summer True"
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/t_summ"/>
+
+            <Button
+                android:textColor="@color/black"
+                android:id="@+id/btn_summ_d"
+                android:text="Summer Deep"
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/d_summ"/>
+
+            <Button
+                android:textColor="@color/black"
+                android:id="@+id/btn_wint_f"
+                android:text="Winter Fair"
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/f_wint"/>
+
+            <Button
+                android:textColor="@color/black"
+                android:id="@+id/btn_wint_t"
+                android:text="Winter True"
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/t_wint"/>
+
+            <Button
+                android:textColor="@color/white"
+                android:id="@+id/btn_wint_d"
+                android:text="Winter Deep"
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/d_wint"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

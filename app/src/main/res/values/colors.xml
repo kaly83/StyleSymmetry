@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple">#7873B4</color>
+    <color name="purple2">#5A70CA</color>
+    <color name="grey_bgframe">#66FFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="green">#1B6120</color>
+
+<!--    ********* SKIN TONE **********   -->
+
+
+    <color name="f_spr">#FCE9DB</color>
+    <color name="t_spr">#E6BFA9</color>
+    <color name="d_spr">#D9A081</color>
+    <color name="f_aut">#C89679</color>
+    <color name="t_aut">#9C6846</color>
+    <color name="d_aut">#7A4D35</color>
+    <color name="f_summ">#F8E8E3</color>
+    <color name="t_summ">#D1AFA4</color>
+    <color name="d_summ">#B78D7C</color>
+    <color name="f_wint">#F4E8E3</color>
+    <color name="t_wint">#A67D6A</color>
+    <color name="d_wint">#4B2E22</color>
+
+
+
+
+
+
+</resources>

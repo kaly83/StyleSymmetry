@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "710424048707",
+    "firebase_url": "https://interim-c89ba-default-rtdb.firebaseio.com",
+    "project_id": "interim-c89ba",
+    "storage_bucket": "interim-c89ba.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710424048707:android:a3163f9388ee871c4810f6",
+        "android_client_info": {
+          "package_name": "com.example.interim"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAOlztfPFNLV72dxavN-GYvcDPwaIEMnY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

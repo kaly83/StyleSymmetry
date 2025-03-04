@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2D186D"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Depth and Contrast:"/>
+
+    <!-- Description -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2D186D"
+        android:textSize="14sp"
+        android:layout_margin="10dp"
+        android:lineSpacingExtra="4dp"
+        android:text="• Medium to deep intensity with balanced contrast.\n• Hair tends to be ashy brown or dark, occasionally with a cool golden or silvery sheen.\n• Eyes are often gray-green, soft blue, or hazel with a muted tone."
+        />
+
+
+
+</LinearLayout>

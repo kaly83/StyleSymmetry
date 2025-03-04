@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Color Analysis:"
+        android:textColor="#2D186D"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <!-- Description -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A color analysis for 'Cool Autumn' focuses on understanding the unique tones, contrasts, and overall aesthetic that align with this color season. Cool Autumns are a rare subset in seasonal color analysis, characterized by a mix of deep, muted tones with a cooler undertone compared to the classic warm and earthy Autumn palette. Here's a breakdown:"
+        android:textColor="#2D186D"
+        android:textSize="14sp"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

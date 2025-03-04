@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grbg"
+    tools:context=".StartingActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/colordrip" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/getStartedButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="300dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:shadowColor="#242143"
+        android:shadowDx="8"
+        android:shadowDy="8"
+        android:shadowRadius="2"
+        android:text="Style Symmetry"
+        android:textColor="#CBFFFFFF"
+        android:textSize="50sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/getStartedButton"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#303375"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:padding="10dp"
+        android:text="Get Started"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>

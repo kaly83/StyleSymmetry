@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@drawable/grbg">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/toggleSwitch"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/toggle_background"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:padding="4dp">
+
+            <Button
+                android:id="@+id/profileButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_active"
+                android:text="Profile"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-medium"/>
+
+            <Button
+                android:id="@+id/cameraButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_inactive"
+                android:text="Camera"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-medium"/>
+        </LinearLayout>
+
+        <!-- Profile Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="30dp"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp">
+
+            <!-- Profile Section Box -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@drawable/infobox"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <!-- Profile Pic -->
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/infobox"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_pic"  />
+
+                <!-- Profile Details -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/profile_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/profile_skin_tone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Skin tone:"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/profile_season"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Season:"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Profile Information-->
+            <LinearLayout
+                android:id="@+id/profile_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/infobox"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/profile_analysis_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Loading profile analysis..."
+                            android:textSize="14sp"
+                            android:textColor="#2D186D"
+                            android:padding="10dp"
+                            android:background="@drawable/infobox"/>
+
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <!-- Title -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Your Color Analysis:"
+                                android:textColor="#2D186D"
+                                android:textSize="16sp"
+                                android:textStyle="bold"/>
+
+                            <!-- Description -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="A color analysis for 'Cool Autumn' focuses on understanding the unique tones, contrasts, and overall aesthetic that align with this color season. Cool Autumns are a rare subset in seasonal color analysis, characterized by a mix of deep, muted tones with a cooler undertone compared to the classic warm and earthy Autumn palette. Here's a breakdown:"
+                                android:textColor="#2D186D"
+                                android:textSize="14sp"
+                                android:layout_margin="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <!-- Title -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Undertone:"
+                                android:textColor="#2D186D"
+                                android:textSize="16sp"
+                                android:textStyle="bold"/>
+
+                            <!-- Description -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Predominantly cool undertones with a subtle hint of warmth. Skin often has a slightly rosy or neutral base, leaning cool."
+                                android:textColor="#2D186D"
+                                android:textSize="14sp"
+                                android:layout_margin="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <!-- Title -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#2D186D"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:text="Depth and Contrast:"/>
+
+                            <!-- Description -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#2D186D"
+                                android:textSize="14sp"
+                                android:layout_margin="10dp"
+                                android:lineSpacingExtra="4dp"
+                                android:text="• Medium to deep intensity with balanced contrast.\n• Hair tends to be ashy brown or dark, occasionally with a cool golden or silvery sheen.\n• Eyes are often gray-green, soft blue, or hazel with a muted tone."
+                                />
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:orientation="vertical">
+
+                            <include
+                                layout="@layout/profile_tips"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:orientation="vertical">
+
+                            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/profile_photo_container"
+                                android:padding="8dp"
+                                android:layout_margin="10dp">
+
+                                <!-- Title-->
+                                <TextView
+                                    android:id="@+id/paletteHeader"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="Your Palette:"
+                                    android:textColor="#2D186D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"/>
+
+                                <!-- Color Palette-->
+                                <LinearLayout
+                                    android:id="@+id/color_swatches"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:orientation="horizontal"
+                                    android:layout_below="@id/paletteHeader"
+                                    android:layout_marginTop="5dp">
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="#FF6F61" />
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="#FFCC99" />
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="#FFD700" />
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="#B2EBF2" />
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="#808000" />
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:orientation="vertical">
+
+                            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/profile_photo_container"
+                                android:padding="8dp"
+                                android:layout_margin="10dp">
+
+                                <!-- Title-->
+                                <TextView
+                                    android:id="@+id/paletteHeader"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="Colors to Avoid:"
+                                    android:textColor="#2D186D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"/>
+
+                                <!-- Color Palette-->
+                                <LinearLayout
+                                    android:id="@+id/color_swatches"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:orientation="horizontal"
+                                    android:layout_below="@id/paletteHeader"
+                                    android:layout_marginTop="5dp">
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="#000000" />
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="#A9A9A9" />
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="#B0E0E6" />
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="#4B0082" />
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="#C5A3AD" />
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="18dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Back symbol -->
+        <ImageView
+            android:id="@+id/logout_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/logout"
+            android:tint="@android:color/white" />
+
+        <!-- Logout Text -->
+        <TextView
+            android:id="@+id/logout_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Logout"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

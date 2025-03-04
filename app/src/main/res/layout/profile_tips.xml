@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/profile_photo_container"
+    android:padding="8dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pro Tip:"
+        android:textColor="#2D186D"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <!-- Description -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="•Pair a dark neutral like charcoal with a softer, muted accent color (e.g., dusty rose or plum). \n\n• Avoid overly bright contrasts, as these can overpower the muted coolness of the season."
+        android:textColor="#2D186D"
+        android:textSize="14sp"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>
